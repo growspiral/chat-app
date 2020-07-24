@@ -24,7 +24,7 @@
   display:block;
   text-decoration:none;
 }
-.new-chat{
+.new-chat a{
   display:block;
   color:skyblue;
   font-size:10px;
