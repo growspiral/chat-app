@@ -8,7 +8,6 @@
      <div class="new-chat">
       <%= link_to 'チャットを作成する', new_room_path %>
      </div> 
-      <a href="#" class="new-chat">チャットを作成する</a>
 </div>
 
 <div class="rooms">
@@ -16,7 +15,8 @@
     <% Room.all.each do |room| %>
   <div class="room">
       <div class="room-name">
-       <a href="#"><%= room.name %></a>
+      <%= link_to room.name, room_messages_path(room.id) %>
+         
       </div> 
   </div>
     <% end %>
